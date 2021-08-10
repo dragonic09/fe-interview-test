@@ -1,0 +1,12 @@
+<div class="gallery-container">
+    <ng-container *ngFor="let country of countries; index as i; trackBy: trackByFn">
+        <app-country-card
+            [countryName]="country.name"
+            [region]="country.region"
+            [subregion]="country.subregion"
+            [capital]="country.capital"
+            [population]="country.population"
+        >
+        </app-country-card>
+    </ng-container>
+</div>
